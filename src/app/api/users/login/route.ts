@@ -21,7 +21,7 @@ export async function POST(request:NextRequest){
             return NextResponse.json({error:'Invalid Password'},{status:404});
         }
         const tokenData ={
-            id:user._id,
+            id:user._id,  
             username: user.username,
             email:user.email
         }
